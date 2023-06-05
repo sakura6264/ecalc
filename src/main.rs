@@ -9,6 +9,7 @@ fn main() {
             width:64,
             height: 64,
         }),
+        follow_system_theme: false,
         ..Default::default()
     };
     eframe::run_native("ECalc",option,Box::new(|_cc|Box::new(tools::gui::App::new()))).unwrap();

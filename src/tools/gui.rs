@@ -32,7 +32,7 @@ impl eframe::App for App {
                 ui.allocate_ui_at_rect(cusor, |ui| {
                     ui.vertical(|ui| {
                         ScrollArea::vertical()
-                            .always_show_scroll(true)
+                            .scroll_bar_visibility(egui::containers::scroll_area::ScrollBarVisibility::AlwaysVisible)
                             .min_scrolled_height(500.0)
                             .id_source("Scroll 1")
                             .show(ui, |ui| {
@@ -75,7 +75,7 @@ impl eframe::App for App {
                 ui.allocate_ui_at_rect(cusor, |ui| {
                     ui.vertical(|ui| {
                         ScrollArea::vertical()
-                            .always_show_scroll(true)
+                            .scroll_bar_visibility(egui::containers::scroll_area::ScrollBarVisibility::AlwaysVisible)
                             .min_scrolled_height(500.0)
                             .id_source("Scroll 2")
                             .show(ui, |ui| {
